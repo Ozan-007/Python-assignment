@@ -1,0 +1,12 @@
+password = "345^@"
+name = 'Ozan'
+guess = input("Enter a name: ")
+
+if name == guess:
+     print(f"Hello,{name}!The password is : {password}")
+else:
+     print(f"Hello,{guess}!See you later.")
+
+
+
+#https://github.com/Ozan-007/Python-assignment
