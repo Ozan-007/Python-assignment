@@ -1,0 +1,31 @@
+print("Answer the questions as Yes or No.")
+age = input("Are you a cigarette addict older than 75 years old? : ")
+if age.upper() == "YES":
+    age = True
+elif age.upper() == "NO":
+    age = False
+else:
+    print("Invalid answer!")
+
+chronic = input("Do you have a severe chronic disease? : ")
+if chronic.upper() == "YES":
+    chronic = True
+elif chronic.upper() == "NO":
+    chronic = False
+else:
+    print("Invalid answer!")
+    input("Do you have a severe chronic disease? : ")
+
+immune = input("Is your immune system too weak? : ")
+if immune.upper() == "YES":
+    immune = True
+elif immune.upper() == "NO":
+    immune = False
+else:
+    print("Invalid answer!")
+    input("Is your immune system too weak? : ")
+
+if age or chronic or immune:
+    print("You are in risky group")
+else:
+    print("You are not in risky group")
