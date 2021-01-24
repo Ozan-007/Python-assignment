@@ -1,0 +1,23 @@
+number = input("Please enter a number: ")
+sum = 0
+if number.isdigit():
+    a = 1
+else:
+    a = 0
+
+while(a == 0):
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
+    break
+
+while(a == 1):
+    for i in number:
+        sum += int(i)**len(number)
+    if sum == int(number):
+        print(f"{number} is an Armstrong number.")
+        break
+    else:
+        print(f"{number} is not an Armstrong number.")
+        break
+
+
+#https://github.com/Ozan-007/Python-assignment
